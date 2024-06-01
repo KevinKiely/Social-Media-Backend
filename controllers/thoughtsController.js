@@ -33,7 +33,7 @@ const thoughtRoutes = {
   },
 
   // Update a thought's content
-  async updateThoughtById(req, res) {
+  async updateThought(req, res) {
       const thought = await Thought.findByIdAndUpdate(req.params.thoughtId, req.body, {
         new: true,
       });
