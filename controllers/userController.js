@@ -64,9 +64,7 @@ const userRoutes = {
       .catch(err => res.status(500).json(err));
   },
 
-
   // Remove friend from user's friend list
-
   removeFriend({ params }, res) {
     User.findOneAndUpdate(
       { _id: params.userId },
